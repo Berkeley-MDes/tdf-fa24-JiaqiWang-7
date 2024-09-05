@@ -16,7 +16,8 @@ Welcome to your new GitHub repository!
     - This week, I focused on orienting myself in this new environment and setting an optimal workflow. I searched for resources to stay up to date with the emerging technologies. I will curate a list of websites/blogs/plateforms as I go. The hope is to replace 50% of my time used on social media with these material.
         - [Times Magazine](https://time.com/tag/technology/)
         - etc
-      
+  - I tried out the laser cutter and made this keychain
+  - <img width="200" alt="laser cutted key chain" src="assets/laserCut.HEIC">
 ### Speculations
   - in complete sentences or paragraphs, and perhaps images or videos.
   - speculation on future direction for the tools [so much is changing very quickly right now, where do you think this is going? Why do you think this?]
