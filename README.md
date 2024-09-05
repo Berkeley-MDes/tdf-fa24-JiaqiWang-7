@@ -8,6 +8,25 @@ Welcome to your new GitHub repository!
 
 
 
+# Week 1 #
+## Week of 09/05/2024
+### Reflections
+  -in complete sentences or paragraphs, and perhaps images or videos.
+  -reflections on what you learned and how you learned it
+  -an assessment of the state of your work
+### Speculations
+  -in complete sentences or paragraphs, and perhaps images or videos.
+  -speculation on future direction for the tools [so much is changing very quickly right now, where do you think this is going? Why do you think this?]
+  -speculation on future direction for the work
+  -bonus: thoughtful descriptions of something interesting and relevant you heard about in the news or industry publications. include text, an image, a link, and a reference that you can follow up on later and share with your peers.
+### Images & Video
+  -images & video should be unified with your presentation (not just a folder of images)
+  -images & video should be directly relevant to the project (What does each shot show us?)
+### Sketches, Drawings, and Diagrams
+  -this could include flowcharts, design files, whiteboarding, storyboards, etc
+  -pencil & paper sketches, drawings, post-its, etc (photographed or scanned and uploaded)
+
+
 ---
 
 # Github Background Information & Context
@@ -20,9 +39,6 @@ The specific file that I’m typing into right now is the **README.md** for this
 <h6> (💡 TIP 2: GitHub Markdown supports <a href="https://gist.github.com/seanh/13a93686bf4c2cb16e658b3cf96807f2"> <em>HTML formatting</em> too, including emojis 😄</a>, in case that helps!) </h6>
 
 ### :star: Whatever you write in your **README.md** will show up on the “front page” of your GitHub repo. This is where we’ll be looking for your [weekly progress reports](https://github.com/Berkeley-MDes/24f-desinv-202/wiki/3.0-Weekly-Submissions#weekly-progress-report). They might look something like this: ###
-# Week 1 #
-## Week of 09/05/2024
-
 
 # Example Report 1 #
 ## Week of 09/05/2024
