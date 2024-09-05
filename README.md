@@ -17,7 +17,7 @@ Welcome to your new GitHub repository!
         - [Times Magazine](https://time.com/tag/technology/)
         - etc
   - I tried out the laser cutter and made this keychain
-  - <img width="200" alt="laser cutted key chain" src="assets/laserCut.HEIC">
+  - <img width="200" alt="laser cutted key chain" src="assets/lasercut.png">
 ### Speculations
   - in complete sentences or paragraphs, and perhaps images or videos.
   - speculation on future direction for the tools [so much is changing very quickly right now, where do you think this is going? Why do you think this?]
