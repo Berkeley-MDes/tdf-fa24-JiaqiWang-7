@@ -10,10 +10,13 @@ Welcome to your new GitHub repository!
 
 # Week 1 #
 ## Week of 09/05/2024
+
 ### Reflections
-  - in complete sentences or paragraphs, and perhaps images or videos.
   - reflections on what you learned and how you learned it
-  - an assessment of the state of your work
+    - This week, I focused on orienting myself in this new environment and setting an optimal workflow. I searched for resources to stay up to date with the emerging technologies. I will curate a list of websites/blogs/plateforms as I go. The hope is to replace 50% of my time used on social media with these material.
+        - [Times Magazine](https://time.com/tag/technology/)
+        - etc
+      
 ### Speculations
   - in complete sentences or paragraphs, and perhaps images or videos.
   - speculation on future direction for the tools [so much is changing very quickly right now, where do you think this is going? Why do you think this?]
