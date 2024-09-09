@@ -4,10 +4,19 @@ Welcome to your new GitHub repository!
 # Outline
 [week 1](README.md#week-1)
 
+[week 2](README.md#week-2)
+
+
 [example](README.md#example-report-1)
 
-
-
+# Week 2 #
+## Week of 09/09/2024
+  - Grasshopper Experiments
+  - As a beginner to grasshopper, I first started to explore the files by moving the parameters. Some add-ons or plug-ins are not installed correctly so I cannot display the student and the activity data.
+     ![Screenshot 2024-09-09 151131](https://github.com/user-attachments/assets/9e8ad153-ea24-4d1a-b384-4b0fd5590ab6)
+    ![Screenshot 2024-09-09 151113](https://github.com/user-attachments/assets/8743e9d8-1d69-4579-9760-2318a2fe56e0)
+    ![Screenshot 2024-09-09 151100](https://github.com/user-attachments/assets/15f5b06f-7175-4dd1-8c64-f934a05fa3d9)
+  - I started watching grasshopper tutorials.
 # Week 1 #
 ## Week of 09/05/2024
 
