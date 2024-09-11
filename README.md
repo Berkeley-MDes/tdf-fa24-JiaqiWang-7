@@ -17,7 +17,8 @@ Welcome to your new GitHub repository!
     ![Screenshot 2024-09-09 151113](https://github.com/user-attachments/assets/8743e9d8-1d69-4579-9760-2318a2fe56e0)
     ![Screenshot 2024-09-09 151100](https://github.com/user-attachments/assets/15f5b06f-7175-4dd1-8c64-f934a05fa3d9)
   - After the exploration, I made a diagram in figjam:
-  - 
+  - ![diagram](https://github.com/user-attachments/assets/64159e84-cd57-4c38-90d0-b03b7b811e13)
+
   - During class on Monday, we made this flow in GH that subtract a cylinder from a box.
    <img width="1524" alt="workshop" src="https://github.com/user-attachments/assets/07c00248-f9ec-4ed0-88f2-b43429a62f60">
 
