@@ -22,27 +22,25 @@ Welcome to your new GitHub repository!
 
   - During class on Monday, we made this flow in GH that subtract a cylinder from a box.
    <img width="1524" alt="workshop" src="https://github.com/user-attachments/assets/07c00248-f9ec-4ed0-88f2-b43429a62f60">
+
+   
 09/12
   -After further exploring the grasshopper file, I used a more visual way of representing the process. Through sketching out how the geometry transforms, I realized that I didn't know how the cut on top of the sphere came from. Then, I discovered that the phone screen offset edge projects itself along the viewing angle with offset to subtract the void from the sphere base.
-  ![void Projection](assets\projection.png)
-  ![diagram2](assets\diagram2.jpg)
-  ![vertial phone stand](assets\vertialphone.png)
+
+  ![void Projection](assets/projection.png)
+
+  <img width="400" alt="diagram2" src="assets/diagram2.jpg"> <img width="200" alt="vertial phone stand" src="assets/vertialphone.png">
 
   -I decided that I want to make a phone stand for video chat, which means the phone needs to be oriented vertially. After adjusting the phone dimension to an iPhone 14 Plus, it became more difficult to find a design that passes all the test. This is one of the iteration that works.
   ![vertial phone stand 2](assets\iphone14Plus.png)
+  
   This structure looks really chuncky. I want to optimize it's structure.
 
   -I am curious about how to generate interesting structures with patterns in grasshopper. I found out an online-course about Grasshopper structure by Nolan Kim, a pattern, structural, and computational designer.
-    - First, I am introduced to the idea of beam based structure.[more about structure](https://msestudent.com/what-is-the-difference-between-fcc-and-bcc-crystal-structure-properties-interstitial-sites-and-examples/)
-    Here are some examples of how it is generated,constructed,and 3d printed.
-  ![beam based structure](assets\beamBasedStructures.png)
-  ![3DPrinted](assets\exampleof3DPrint.png)
-  ![example work flow](assets\generativeSphere.png)
-  ![how it generate](assets\howItGenerate.png)
-  ![examples other](assets\processExampleBeam.png)
-  ![variations](assets\variationsBeam.png)
-
-  -
+    - First, I am introduced to the idea of beam based structure.
+     -[more about structure](https://msestudent.com/what-is-the-difference-between-fcc-and-bcc-crystal-structure-properties-interstitial-sites-and-examples/)
+    - Here are some examples of how it is generated,constructed,and 3d printed.
+      
 
 # Week 1 #
 ## Week of 09/05/2024
