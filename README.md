@@ -14,7 +14,36 @@ Welcome to your new GitHub repository!
 # Week 3 #
 ## Week of 09/16/2024
   - Grasshopper Experiments -Part 1
-    - <img width="720" src="assets\Screenshot 2024-09-14 174336.png">
+    
+    For the next step, I deceded to make a poly-poly pen holder. Here is the working fill in progress: [progress file](assets\RockingPenHolder.gh)
+
+    I found it helpful to draw out a diagram of how I think it should be constructed before I start.
+    ![diagram before](image.png)
+
+    As I start actually making the flow, I realized the differences between my mental model of how to construct things and how grasshopper work. 
+
+    Example 1: Constructing an Ellipsoid
+
+    At first, I thought of constructing an ellipsoid from three ellipses,but then I realized that there are no node that can take three curves and turn them into an ellipsoid form.
+    <img width="720" alt="ellipsoid before" src="assets\Screenshot 2024-09-14 163605.png">
+    
+    I then decided to create a sphere first and modify the x,y,z ratio to achieve the same effect.
+    <img width="720" alt="ellipsoid after" src="assets\Screenshot 2024-09-14 165138.png">
+
+  - Grasshopper Experiments -Part 2
+
+    To maximize the stability of the pen holder. The top part needs to be as light as possible. That's where lattice will become helpful!
+
+    Here are some cube structures I made:
+    [Sturcture 1](assets\lattice\sturcture1.stl), [Sturcture 2](assets\lattice\structure2.stl) , [Sturcture 3](assets\lattice\structure3.stl), [Sturcture 4](assets\lattice\structure4.stl)
+
+    <img width="720" alt="cube strutcure" src="assets\Screenshot 2024-09-16 153904.png">
+
+
+
+    
+
+
 
 
 
