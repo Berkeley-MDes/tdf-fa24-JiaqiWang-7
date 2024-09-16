@@ -6,8 +6,17 @@ Welcome to your new GitHub repository!
 
 [week 2](README.md#week-2)
 
+[week 3](README.md#week-3)
+
 
 [example](README.md#example-report-1)
+
+# Week 3 #
+## Week of 09/16/2024
+  - Grasshopper Experiments -Part 1
+    - <img width="720" src="assets\Screenshot 2024-09-14 174336.png">
+
+
 
 # Week 2 #
 ## Week of 09/09/2024
