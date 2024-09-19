@@ -40,6 +40,32 @@ Welcome to your new GitHub repository!
     <img width="720" alt="cube strutcure" src="assets\Screenshot 2024-09-16 153904.png">
 
 
+    I went to the advanced 3D-printing lab to print these cube structures using the Form 3. 
+
+
+    <img width="200" alt="cube strutcure" src="assets\lattice\7L3A9251.JPG"> <img width="360" alt="cube strutcure" src="image-2.png">
+
+
+
+    I ran into Chris Parsell in the lab. I asked him about how some of the 3D print samples on the table were made. I was particularly interested in this Voronoi vase. It seems like a good way to reduce the mass of my Pen holder's top part.
+
+    ![inspo](image-1.png)
+
+    So, I set off creating system to generate the voronoi structure. I talked to Cody about potential ways to do so, and managed to create the lines of the voronoi lattice based on the top part of my pen holder. However, I ran into a problem of uniting individual cells to a single structure. Below are some screenshots of the result.
+
+    <img width="360" alt="test 2" src="assets\lattice\test2.png"> <img width="360" alt="test 3" src="assets\lattice\test3.png">
+
+    Because I was running out of time, I tried to print it despite the segmented breps. I think that the 3D printer has some processing capability to see them as a unity, so the print came out OK.
+
+    <img width="720" alt="test 2" src="assets\photo of holder\7L3A9244.JPG
+">
+
+    
+
+
+
+
+
 
     
 
