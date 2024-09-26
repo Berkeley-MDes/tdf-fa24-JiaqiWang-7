@@ -15,7 +15,7 @@ Welcome to your new GitHub repository!
 
 # Week 4 #
 ## Week of 09/23/2024
-Personal Ecosystem Diagram:
+**Personal Ecosystem Diagram:**
 Apple has designed an ecosystem where each device plays a specific role, yet they all work together seamlessly to enhance the user's digital and physical environment. Here's how this ecosystem functions from my perspective:
 
 1. Central Hub: iPhone
@@ -33,6 +33,13 @@ iCloud ensures that all data (e.g., contacts, photos, health metrics) is synced 
 5. Software Integration
 The ecosystem relies heavily on software and apps designed to improve productivity, health, entertainment, and communication. 
 <img width="720" alt="Ecosystem Diagram" src="assets\Files\Diagram\Slide 4_3 - 1.jpg">
+
+**Reflection**
+
+Creating the diagram of personal devices made me realize the importance of sensing technologies and how sensors are becoming more embeded in our daily environments to support new interactions. For example, I looked into the Mites sensor.
+
+It collects data in the environment such as light, motion, temperature...to infer activities happening in the room.
+There are many potential services that comes with this technology, but also concerns regarding data awareness & transparency.
 
 
 # Week 3 #
