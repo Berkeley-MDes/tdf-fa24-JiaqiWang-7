@@ -8,8 +8,32 @@ Welcome to your new GitHub repository!
 
 [week 3](README.md#week-3)
 
+[week 4](README.md#week-4)
+
 
 [example](README.md#example-report-1)
+
+# Week 4 #
+## Week of 09/23/2024
+Personal Ecosystem Diagram:
+Apple has designed an ecosystem where each device plays a specific role, yet they all work together seamlessly to enhance the user's digital and physical environment. Here's how this ecosystem functions from my perspective:
+
+1. Central Hub: iPhone
+The iPhone serves as the heart of Apple's ecosystem. It connects to the user’s physical environment (e.g., light, sound, location) and other devices like the Apple Watch, AirPods, and CarPlay. It collects bio data (heart rate, steps, etc.) from the Apple Watch and syncs it to the cloud (iCloud) for easy access across other devices. The iPhone integrates hardware sensors (like GPS, accelerometer, and touch) and software (like health, fitness, and communication apps) to manage interactions.
+
+2. Wearable Devices: Apple Watch and AirPods
+Apple Watch collects and monitors bio data like heart rate and movement, providing health-related notifications and real-time fitness tracking.
+AirPods offer seamless audio connectivity. They automatically switch between devices (iPhone, iPad, MacBook) based on user interaction, providing a hands-free experience with features like Siri integration for voice commands.
+3. Environment: CarPlay, Light, and Sound
+Devices like CarPlay extend the iPhone’s functionality to the car. The system interacts with the environment’s sound and light settings, enhancing convenience and safety.
+
+4. iCloud: Data Sync and Continuity
+iCloud ensures that all data (e.g., contacts, photos, health metrics) is synced across all devices in the ecosystem. 
+
+5. Software Integration
+The ecosystem relies heavily on software and apps designed to improve productivity, health, entertainment, and communication. 
+<img width="720" alt="Ecosystem Diagram" src="assets\Files\Diagram\Slide 4_3 - 1.jpg">
+
 
 # Week 3 #
 ## Week of 09/16/2024
@@ -59,6 +83,9 @@ Welcome to your new GitHub repository!
 
     <img width="720" alt="test 2" src="assets\photo of holder\7L3A9244.JPG
 ">
+
+Here is the final Grasshopper File: [Final File](assets\Files\RockingPenHolder_Sep19.gh)
+
 
     
 
