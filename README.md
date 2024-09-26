@@ -38,8 +38,19 @@ The ecosystem relies heavily on software and apps designed to improve productivi
 
 Creating the diagram of personal devices made me realize the importance of sensing technologies and how sensors are becoming more embeded in our daily environments to support new interactions. For example, I looked into the Mites sensor.
 
+<img width="720" alt="sensor" src="assets\Files\layout-2.jpg">
+
 It collects data in the environment such as light, motion, temperature...to infer activities happening in the room.
 There are many potential services that comes with this technology, but also concerns regarding data awareness & transparency.
+
+<img width="720" alt="sensor middleware" src="assets\Files\middleware.jpg">
+
+
+
+**Speculation**
+
+As the Internet of Things (IoT) continues to expand, IoT sensors are poised to play a transformative role across industries and daily life. Future IoT sensors will become increasingly miniaturized, autonomous, and capable of real-time decision-making through edge computing. These sensors will enable smarter environments. Additionally, advances in AI will allow sensors to analyze complex data locally, providing actionable insights without the need for cloud connectivity, reducing latency and bandwidth usage. This shift could lead to an explosion of interconnected smart devices that make human environments more adaptive, efficient, and responsive.
+
 
 
 # Week 3 #
