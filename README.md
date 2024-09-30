@@ -10,8 +10,96 @@ Welcome to your new GitHub repository!
 
 [week 4](README.md#week-4)
 
+[week 5](README.md#week-5)
+
 
 [example](README.md#example-report-1)
+
+# Week 5 #
+## Week of 09/30/2024
+
+09/20/2024
+
+I connected my photon2 to my home Wi-Fi and started experimenting. Although I have used microcontrollers before but particle is new to me.
+
+### Test 1 ###
+I first tested out sending "hello world!" messages to the cloud to check if my device is working properly.
+
+<img width="720" alt="helloWorld" src="assets\Files\screenshot\Screenshot 2024-09-28 161340.png">
+
+I was curious about the specific meaning of the ".publish()" function.
+
+      Publish an event through the Particle Device Cloud that will be forwarded to all registered listeners, such as callbacks, subscribed streams of Server-Sent Events, and other devices listening via Particle.subscribe().
+
+
+### Test 2 ###
+I was testing out the button -> led pulse rate example. I spent some time figuring out how I should wire my button because it is different from the one shown on the graph. My button only has two legs. 
+
+Then, I figured out the difference between pull-up and pull-down resistors. I struggle a bit with mapping the diagram to the physical wiring. 
+
+I experimented flipping the Led:
+1. connects it's cathode to connect 3 ground
+2. connects it's anode to 3.3V
+
+The resulting effects are the same.
+
+![four legged button](image-3.png)
+<img width="360" alt="pull-up and pull-down" src="assets\Files\Diagram\pull-upandpull-down.jpg">
+<img width="360" alt="pull-up and pull-down" src="assets\Files\sketches\wiring.jpg">
+
+I changed the pause time change from 50 to 100 because 50 was hard for me to observe the difference.
+
+### Test 3 ###
+basic button send-on-change
+
+I did not receive any logs on the dashboard or the console. Needs further debugging.
+
+![screenshot of code](image-5.png)
+<img width="360" alt="wiring for button" src="assets\Files\button.jpg">
+
+### How can I incorporate it into my life ###
+- I have been debating whether or not I should bike to school because I worried my bike might be stolen.
+- I would benefit from an ecosystem that keeps an eye out for my bike. Sends notifications to my phone when suspicious activity is happening.
+
+### Observations ###
+- Entry Point: I think what makes this digital ecosystem so powerful is that it can take a wide range of activities (digital or physical) as inputs and translate them into insights to where they are needed without being limited to space.
+
+- From reading the device OS API single-page documentation, I understood the following:
+    - Variables are the key message that runs between the device and the cloud.
+    - Communication between the devices and the cloud needs to be concise and limited to certain types of data. I assume it’s because it takes up computing power on the back-end server to pass on these data, which is why each account has a quota on how many variables or functions it can use.
+    - Functions get called upon a matching POST request.
+    - In C++, an object is created from a class. I find this example helpful in understanding the relationship between a class and an object:
+        
+              // Create a Car class with some attributes
+
+              class Car {
+              public:
+              string model;
+              int year;
+              };
+              
+              int main() {
+              // Create an object of Car
+              Car carObj1;
+              carObj1.brand = "BMW";
+              carObj1.model = "X5";
+              carObj1.year = 1999;
+
+              // Create another object of Car
+              
+              Car carObj2;
+              carObj2.brand = "Ford";
+              carObj2.model = "Mustang";
+              carObj2.year = 1969;
+              
+              // Print attribute values
+              
+              cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+              cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+
+              return 0;
+              
+              }
 
 # Week 4 #
 ## Week of 09/23/2024
@@ -32,7 +120,10 @@ iCloud ensures that all data (e.g., contacts, photos, health metrics) is synced 
 
 5. Software Integration
 The ecosystem relies heavily on software and apps designed to improve productivity, health, entertainment, and communication. 
+
 <img width="720" alt="Ecosystem Diagram" src="assets\Files\Diagram\Slide 4_3 - 1.jpg">
+
+
 
 **Reflection**
 
