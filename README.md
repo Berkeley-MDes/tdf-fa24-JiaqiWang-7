@@ -18,6 +18,52 @@ Welcome to your new GitHub repository!
 # Week 5 #
 ## Week of 09/30/2024
 
+10/03/2024
+
+### Reflection ###
+This week, I had a little mental breakdown when I realized that I didn't fully understand things that I should have known. Back in undergrad, Arduino empowered me to prototype physical interactions that others might not have the capacity to do. However, my intention to use Arduino back then was to create interaction and not so much about learning how to program the microcontroller itself, leading to a fragmented knowledge base. I want to use this project as an opportunity to build a solid foundation in physical computing. A step I should incorporate into my learning process is asking myself "Why?" Why is the resistor in a pull-down setting placed here? Why voltage would be pulled down when the circuit is connected? so on...
+
+### Speculation ###
+During Design Frameworks, Hugh mentioned this speculative video about how the new meta AR glasses can take a dark turn when combined with face-recognition and LLM. The AR glasses looks not so different from a regular pair of glasses. While that’s critical for smart glasses adoption, it also makes it harder for people to clock when someone might be wearing a camera on their face. 
+
+I speculate that there will be more Anti-Facial Recognition Tools in the future.
+
+[video here](https://www.theverge.com/2024/10/2/24260262/ray-ban-meta-smart-glasses-doxxing-privacy)
+
+<img width="720" alt="privacy" src="assets\Files\sketches\prison.jpg">
+
+
+
+10/02/2024
+
+During class I realized that we were supposed to complete 3 out of 6 of a different set of tutorials，and I was actually jumping ahead. So, I finished the 01-06 basic tutorials during class. Everything went smoothly besides a little confusion about the pull-down and pull-up setting for the button. I thought I need to wire the circut in a certain way to make sure the pin won't receive floating signals, based on my understanding with arduino. Then I got my "ah-ha" moment as I realized that I can program the pin to be a pull-up or pull-down setting. Setting a pin to be pull-down instead of wiring it that way make sure a well-defined logical level at a pin under all conditions. This is useful in logic circuits, and is often used when:
+  - Interfacing a switch or other input with a microcontroller or other digital gates
+  - Providing a controlled current flow into a resistive sensor Below are the documentations:
+
+### Test 1 ###
+<img width="720" alt="01" src="assets\Files\screenshot\01_code.png">
+
+### Test 2 ###
+<img width="720" alt="02" src="assets\Files\screenshot\02_code.png">
+
+### Test 3 ###
+<img width="720" alt="03" src="assets\Files\screenshot\03_code.png">
+
+### Test 4 ###
+<img width="720" alt="03" src="assets\Files\documentation\04_blink.jpg">
+
+### Test 5 ###
+<img width="720" alt="03" src="assets\Files\documentation\05_blinkOutside.jpg">
+
+### Test 5 ###
+<img width="720" alt="03" src="assets\Files\documentation\06_publish.jpg">
+
+
+<br>
+
+
+
+
 09/20/2024
 
 I connected my photon2 to my home Wi-Fi and started experimenting. Although I have used microcontrollers before but particle is new to me.
@@ -60,6 +106,7 @@ I did not receive any logs on the dashboard or the console. Needs further debugg
 ### How can I incorporate it into my life ###
 - I have been debating whether or not I should bike to school because I worried my bike might be stolen.
 - I would benefit from an ecosystem that keeps an eye out for my bike. Sends notifications to my phone when suspicious activity is happening.
+![sketch](image-7.png)
 
 ### Observations ###
 - Entry Point: I think what makes this digital ecosystem so powerful is that it can take a wide range of activities (digital or physical) as inputs and translate them into insights to where they are needed without being limited to space.
@@ -124,6 +171,8 @@ The ecosystem relies heavily on software and apps designed to improve productivi
 <img width="720" alt="Ecosystem Diagram" src="assets\Files\Diagram\Slide 4_3 - 1.jpg">
 
 
+<br>
+
 
 **Reflection**
 
@@ -136,12 +185,17 @@ There are many potential services that comes with this technology, but also conc
 
 <img width="720" alt="sensor middleware" src="assets\Files\middleware.jpg">
 
-
+<br>
 
 **Speculation**
 
-As the Internet of Things (IoT) continues to expand, IoT sensors are poised to play a transformative role across industries and daily life. Future IoT sensors will become increasingly miniaturized, autonomous, and capable of real-time decision-making through edge computing. These sensors will enable smarter environments. Additionally, advances in AI will allow sensors to analyze complex data locally, providing actionable insights without the need for cloud connectivity, reducing latency and bandwidth usage. This shift could lead to an explosion of interconnected smart devices that make human environments more adaptive, efficient, and responsive.
+As the Internet of Things (IoT) continues to expand, IoT sensors are poised to play a transformative role across industries and daily life. Future IoT sensors will become increasingly miniaturized, autonomous, and capable of real-time decision-making through edge computing. These sensors will enable smarter environments. This shift could lead to an explosion of interconnected smart devices that make human environments more adaptive, efficient, and responsive.
 
+<br>
+
+**Reflection**
+
+After closely examined the digital ecosystem near me, I am more appreciative of how the system is designed in a way that we as users won't be exposed to the complexity of the system but can make use of it. Apple's ecosystem is a clear demonstration of good design concept models that matches user's mental model. I also become more aware of energy consumption aspect of the sensing modules.
 
 
 # Week 3 #
@@ -195,7 +249,19 @@ As the Internet of Things (IoT) continues to expand, IoT sensors are poised to p
 
 Here is the final Grasshopper File: [Final File](assets\Files\RockingPenHolder_Sep19.gh)
 
+### Reflection
 
+A lot of learnings are packed into this week. I am glad that I talked to a lot of experts in their fields. I learned more about the 3D printing part of lattice structure from Chris, Grasshopper from Cody and TJ. This is why having a creative workspace is so important for innovation. A lot of new insights came from cross-pollination. I should get more used to reaching out to people.
+
+### Speculation
+
+[morphing matter](https://morphingmatter.org/)
+
+ Greatly inspired by Dr.Yao's lecture on Morphing matter, I looked into a sub-category of morphing matter: Self-healing robots. It's a field of research where robots can autonomously repair damage, inspired by biological processes such as human tissue regeneration. Some existing prototypes use soft robotics with materials like elastomers embedded with microchannels filled with liquid healing agents. Upon damage, these agents react and solidify, "healing" the robot. 
+ 
+ Potential benefit of such technology could be Robots could detect damage, halt operations, and self-repair in real-time, reducing downtime in industrial and medical applications.
+
+<img width="720" src="assets\Files\Diagram\SMM_Figure-1.jpg">
     
 
 
@@ -240,6 +306,16 @@ Here is the final Grasshopper File: [Final File](assets\Files\RockingPenHolder_S
     Here are some examples of how it is generated,constructed,and 3d printed.
   ![variations](assets/variationsBeam.png)
   <img width="310" alt="beam based structure" src="assets/beamBasedStructures.png"> <img width="300" alt="3DPrinted" src="assets/exampleof3DPrint.png"> <img width="290" alt="how it generate" src="assets/howItGenerate.png">
+
+  ### Speculation
+   For this week, I was thinking about Brain-Computer Interfaces (BCIs): Directly linking the human brain with machines could enhance communication, control devices with thought, or even improve cognitive capabilities.
+
+   I wonder how much meaning-making process happens in our mind and how much of that happen while we are transforming the inner thought in our brain to the outer environments. Sometimes I don't have a clear sentence in my mind but more of a messy, raw, cluster of thoughts. 
+
+   ![alt text](image-6.png)
+
+   ### Reflection
+   I learned a lot more about the potential of computation design this week. Especially regarding structure lattice. This seems like a clever division of work between machines and human. I, as the designer of the system can decide on high-level parameters in an easy and digustable form while the machine takes care of executing the repetitive and calculations intensive work.
 
 # Week 1 #
 ## Week of 09/05/2024
