@@ -20,6 +20,25 @@ Welcome to your new GitHub repository!
 
 10/03/2024
 
+### Supplemental Test 3 ###
+I did the fsr (force sensitive resistor) -> RGB-led color fader tutorial. I thought this part of code was particularly interesting to me because it fades one color to another smoothly.
+
+    void setTarget(int red, int green, int blue) {
+    while ( rValue != red || gValue != green || bValue != blue ) {
+    if ( rValue < red ) {rValue += 1;}
+    if ( rValue > red ) {rValue -= 1;}
+ 
+    if ( gValue < green ) {gValue += 1;}
+    if ( gValue > green ) {gValue -= 1;}
+ 
+    if ( bValue < blue ) {bValue += 1;}
+    if ( bValue > blue ) {bValue -= 1;}
+ 
+    setColor(rValue, gValue, bValue);
+    delay(deltime);
+  }
+<img width="720" alt="fsr-led" src="assets\Files\documentation\fsr.jpg">
+
 ### Reflection ###
 This week, I had a little mental breakdown when I realized that I didn't fully understand things that I should have known. Back in undergrad, Arduino empowered me to prototype physical interactions that others might not have the capacity to do. However, my intention to use Arduino back then was to create interaction and not so much about learning how to program the microcontroller itself, leading to a fragmented knowledge base. I want to use this project as an opportunity to build a solid foundation in physical computing. A step I should incorporate into my learning process is asking myself "Why?" Why is the resistor in a pull-down setting placed here? Why voltage would be pulled down when the circuit is connected? so on...
 
@@ -40,22 +59,22 @@ During class I realized that we were supposed to complete 3 out of 6 of a differ
   - Interfacing a switch or other input with a microcontroller or other digital gates
   - Providing a controlled current flow into a resistive sensor Below are the documentations:
 
-### Test 1 ###
+### Basic Test 1 ###
 <img width="720" alt="01" src="assets\Files\screenshot\01_code.png">
 
-### Test 2 ###
+### Basic Test 2 ###
 <img width="720" alt="02" src="assets\Files\screenshot\02_code.png">
 
-### Test 3 ###
+### Basic Test 3 ###
 <img width="720" alt="03" src="assets\Files\screenshot\03_code.png">
 
-### Test 4 ###
+### Basic Test 4 ###
 <img width="720" alt="03" src="assets\Files\documentation\04_blink.jpg">
 
-### Test 5 ###
+### Basic Test 5 ###
 <img width="720" alt="03" src="assets\Files\documentation\05_blinkOutside.jpg">
 
-### Test 5 ###
+### Basic Test 5 ###
 <img width="720" alt="03" src="assets\Files\documentation\06_publish.jpg">
 
 
@@ -68,7 +87,7 @@ During class I realized that we were supposed to complete 3 out of 6 of a differ
 
 I connected my photon2 to my home Wi-Fi and started experimenting. Although I have used microcontrollers before but particle is new to me.
 
-### Test 1 ###
+### Supplemental Test 0 ###
 I first tested out sending "hello world!" messages to the cloud to check if my device is working properly.
 
 <img width="720" alt="helloWorld" src="assets\Files\screenshot\Screenshot 2024-09-28 161340.png">
@@ -78,7 +97,7 @@ I was curious about the specific meaning of the ".publish()" function.
       Publish an event through the Particle Device Cloud that will be forwarded to all registered listeners, such as callbacks, subscribed streams of Server-Sent Events, and other devices listening via Particle.subscribe().
 
 
-### Test 2 ###
+### Supplemental Test 1 ###
 I was testing out the button -> led pulse rate example. I spent some time figuring out how I should wire my button because it is different from the one shown on the graph. My button only has two legs. 
 
 Then, I figured out the difference between pull-up and pull-down resistors. I struggle a bit with mapping the diagram to the physical wiring. 
@@ -95,7 +114,7 @@ The resulting effects are the same.
 
 I changed the pause time change from 50 to 100 because 50 was hard for me to observe the difference.
 
-### Test 3 ###
+### Supplemental Test 2 ###
 basic button send-on-change
 
 I did not receive any logs on the dashboard or the console. Needs further debugging.
