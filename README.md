@@ -12,8 +12,50 @@ Welcome to your new GitHub repository!
 
 [week 5](README.md#week-5)
 
+[week 6](README.md#week-6)
+
 
 [example](README.md#example-report-1)
+
+# Week 6 #
+## Week of 10/07/2024 Monday
+
+### MPU6050 Testing ###
+Getting raw data values from the IMU:
+
+<img width="720" alt="imuTest" src="assets\Files\documentation\IMU.jpg">
+
+I was curious about how to interoperate the value it spits out. Here is what I found out about the sensors:
+  ### Accelerometer :
+
+  Measures linear acceleration along the x, y, and z axes.
+  It provides values that correspond to the rate of change of velocity, including detecting gravity (e.g., in the MPU6050, it's often used to determine tilt or orientation).
+
+  Units: meters per second squared (m/s²) or "g" force.
+
+  Example use: detecting whether the device is moving or stationary and in which direction, sensing orientation changes like when a phone is rotated.
+
+
+
+
+### Gyroscope:
+
+  Measures angular velocity (the rate of rotation) around the x, y, and z axes.
+
+  It provides values related to how fast an object is rotating in space.
+
+  Units: degrees per second (°/s) or radians per second (rad/s).
+  Example use: sensing rotational movement, like when a person turns their wrist or when stabilizing a camera.
+
+  ### Mapping Value:
+  Now, moving onto mapping the raw value ( 16-bit signed values) to meaningful physical units (like acceleration in g for accelerometers or angular velocity in degrees per second for gyroscopes)
+![converting values](image-8.png)
+<img width="720" src="assets\Files\documentation\converting values.jpg">
+
+### APDS Testing ###
+
+<img width="720" alt="ADPS" src="assets\Files\documentation\APDS.jpg">
+
 
 # Week 5 #
 ## Week of 09/30/2024
