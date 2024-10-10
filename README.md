@@ -53,10 +53,57 @@ I was curious about how to interoperate the value it spits out. Here is what I f
 <img width="720" src="assets\Files\documentation\converting values.jpg">
 
 ### APDS Testing ###
-
+#### proximity
 <img width="720" alt="ADPS" src="assets\Files\documentation\APDS.jpg">
 
+### ambient light (input)
+I happened to have a LED lamp that can change color, so I used it to test the ambient light sensor on the ADPS sensor.
+It worked perfectly.
 
+<img width="720" alt="red_input" src="assets\Files\documentation\red(input).jpeg">
+
+### ambient light (input + output)
+
+Below is my modification to the code to make the buil-in LED display the color that is most dominant.
+
+I realized that the reaction to color changes become significantly slower and less accurate after the change. Could it be caused by the delay introduced by the RGB.color() function? If so, how can I better arrange them to minimize the delay?
+
+<img width="720" alt="code" src="assets\Files\documentation\rgb_ADPS.png">
+
+<img width="360" alt="greem_input+output" src="assets\Files\documentation\green_output+input.jpeg">
+<img width="360" alt="blue_input+output" src="assets\Files\documentation\blue_output+input.jpeg">
+
+### Reflection ###
+I would like to take this week’s reflection as an opportunity to remember what I learned about programmable user interfaces.
+
+Here is a link to the notes: [PUI notes]("https://docs.google.com/document/d/1VYKcO-v8T106MddlizEY5ZF6dXFqc6fhBCmsRE3MZLU/edit")
+
+- **1. Model View Controller** (MVC) is a design pattern used in software development, primarily for creating user interfaces.
+    
+    **Model:**
+    
+    - Represents the data and all the business logic of the application
+    - Responsible for retrieving and storing data, as well as performing any necessary data processing
+    - Notifies the view of any changes in the data
+    
+    **View:**
+    
+    - Represents the user interface and presentation of the data
+    - Displays the data provided by the model
+    - Sends user input to the controller
+    
+    **Controller:**
+    
+    - Acts as an intermediary between the model and view
+    - Processes user input and updates the model accordingly
+    - Can also update the view to reflect changes in the model
+![MOV](image-9.png)
+
+### Speculation ###
+
+ With Meta’s new [AR glasses](https://about.fb.com/news/2024/09/introducing-orion-our-first-true-augmented-reality-glasses/) dropped. I spent some spare time investigating the future possibilities of combining AI and AR glasses. I listened to a podcast by a couple of start-up founders in China who decided to build AI+AR glasses for ski helmets recently. I realized that vertically integrated AR glasses that combine hardware and software address scenarios where smartphones fall short, and solving such problems can encourage users to vote with their wallets. With the maturation of the upstream and downstream ecosystem, now is the golden age for lightweight AR glasses startups.
+    
+  Smart glasses also drive developers to explore the next-generation human-computer interaction interface, LUI (Language User Interface), where the ability of on-device models and real-time interaction with low-latency AI will become increasingly important.
 # Week 5 #
 ## Week of 09/30/2024
 
