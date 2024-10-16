@@ -14,8 +14,54 @@ Welcome to your new GitHub repository!
 
 [week 6](README.md#week-6)
 
+[week 7](README.md#week-7)
+
 
 [example](README.md#example-report-1)
+
+
+# Week 7 #
+## Week of 10/014/2024 Monday
+
+### Connecting Particle to Edge Impulse ###
+
+Before class on Monday, I was mainly working on connecting photon2 to edge Impulse. 
+
+I ran into a lot of trouble installing the dependencies on my PC and Mac. Below are some error messages from the terminal. I found using ChatGPT to interperate these error messages very helpful.
+
+
+  <img width="720" alt="error" src="assets\Files\screenshot\errorCode.png">
+  <img width="720" alt="debug" src="assets\Files\screenshot\debugging.png">
+
+Eventually, with the help from our star TA Fareha, I managed to connect my photon2 with edge impulse on my Mac.
+
+<img width="720" alt="mac terminal" src="assets\Files\screenshot\terminal code.jpg">
+
+I started training my model to recognize the 2 spells for the first experiment: Turning on and off and LED with Lumos and Nox.
+
+<img width="360" alt="lumos" src="assets\Files\Diagram\Lumos.png">
+<img width="360" alt="nox" src="assets\Files\Diagram\nox.png">
+
+These are the results of training data.
+
+<img width="360" alt="training" src="assets\Files\screenshot\training performance.png">
+<img width="360" alt="testing" src="assets\Files\screenshot\testing.png">
+<img width="360" alt="result" src="assets\Files\screenshot\result.png">
+
+### Sketching the wand and interaction set-up ###
+
+I wanted to 3D print a really basic wand to start holding the component together, which can lead to more accurate ML learning data because the MPU sensor will be more secured.
+
+I started sketching and modeling the electronic component in Fusion 360. I downloaded the 3D model of the MPU sensor from Adafruit. Link is here: [adafruit CAD](https://github.com/adafruit/Adafruit_CAD_Parts)
+
+<img width="360" alt="lumos" src="assets\Files\sketches\componentLayout_Sketch.jpg">
+<img width="360" alt="nox" src="assets\Files\screenshot\wand_withPlacehoder.png">
+
+The form right now looks more like a gun than a wand, but form isn't the top priority now..hehe
+
+
+
+
 
 # Week 6 #
 ## Week of 10/07/2024 Monday
