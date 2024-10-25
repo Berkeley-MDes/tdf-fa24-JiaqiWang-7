@@ -16,12 +16,18 @@ Welcome to your new GitHub repository!
 
 [week 7](README.md#week-7)
 
+[week 8](README.md#week-8)
 
 [example](README.md#example-report-1)
 
+# Week 8 #
+## Week of 10/24/2024 Thursday
+
+
+
 
 # Week 7 #
-## Week of 10/014/2024 Monday
+## Week of 10/14/2024 Monday
 
 ### Connecting Particle to Edge Impulse ###
 
