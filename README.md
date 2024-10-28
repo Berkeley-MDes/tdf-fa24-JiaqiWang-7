@@ -22,9 +22,47 @@ Welcome to your new GitHub repository!
 
 # Week 8 #
 ## Week of 10/24/2024 Thursday
+### Deployment of Edge impulse library
+When I first opened up the deployed library, I was very lost on how to move forward from there because the language used in the main.cpp file looks very different from what I usually see in the weekly assignment. 
+I decided to perform an incremental test to understand the functions provided by the library.
+1. Use raw feature data from live classification result to test locally deployed model
+
+2. Fake serial print with 0s to see how edge impulse changes the raw data from sensor. -> understood that feature data is almost equal to raw sensor data.
 
 
+3. Directly replace raw feature data list with MPU sensor data as 2D array list.
+4. Directly replace raw feature data list with MPU sensor data as 1D array list
+5. Check the frequency used for training, sampling, and interpreting data.
+    1. Delay time has to remain the same across different stages!
+    2. Aligning sampling and training frequencies helps create a more representative, high-quality dataset, allowing the ML model to capture relevant patterns without being misled by noise or data scarcity.
+6. Interpolation experiments: 
+    1. Hypothesis: Maybe the result is not accurate because the time frame of sampling does not match the time frame of actually performing the spell motion. Having only 1 feature list to infer with made this unmatching time frame problem more prominent. 
+    2. Storing 4 sets of feature lists and randomly sample them all together to minimize effects of unmatching time frame
+    3. Randomly sampling from 4 sets of feature list
+7. See accuracy of unoptimized vs quantized methods.
+#### Experiment 2 Impacts:
+Alignment of Sampling and Training Frequencies (delay time)
+From experimenting with Model 1, I realized that the training frequency I used was too low, risking missing important details in the data, leading to a loss of critical information that can impact model performance, especially in applications where real-time or high-frequency events occur. On the other hand, during deployment, for accurate learning, the training frequency needs to be consistent with the data's sampling frequency. If the model isn't trained on data that matches the rate at which it’s collected, it may not learn patterns that happen over shorter or longer intervals. With aligned sampling and training frequencies, I achieved the 100% accuracy rate in Model 2.
 
+### Establishing connection with cloud + p5.js
+Initially, I used particle events  to publish a recognized spell as a string with the spell’s name, but it was causing trouble for p5.js side to fetch the data because it’s not constantly available. After talking to Jeff, I realized that using Particle Variables is a great choice for connecting with p5.js when I need consistent access to specific data without requiring real-time push updates. 
+
+By setting up p5.js to request Particle Variable values through HTTP at defined intervals, this approach proves efficient for several reasons:
+
+1. Reduced Traffic: Instead of constantly broadcasting events from the Particle device, p5.js can retrieve data only when necessary. This reduces network traffic and helps avoid hitting event rate limits.
+Ease of Access: Particle Variables allow the p5.js sketch to fetch the current value on demand, giving me full control over how often and when data is retrieved within p5.js itself.
+2. Reliability: Since Particle Variables stay available on the cloud, p5.js can always access the most recent value. This provides stability, especially when there are network delays or if the data changes infrequently.
+
+### Experiment 3 Impacts:
+Choosing Particle Events and Particle Variables for Different Outputs.
+For p5.js, it’s better to use Particle Variable because it’s fetching data constantly.
+For the other photon2, it’s better to use Particle Events, which is ideal when needing to send data occasionally, trigger updates, or receive data in real time.
+
+
+### Speculation ###
+Given my project’s use of ML models to distinguish motion patterns, AI could take on a critical role as the “intelligence layer” in Digital Ecosystems. AI’s role could expand to act as a central processor that interprets incoming data from multiple devices, managing responses in real time and adapting to patterns learned from user behavior. In applications similar to the Magic Spell project, AI could recognize complex gesture patterns, adjust digital outputs in real-time, and personalize responses based on previous interactions. This would allow Digital Ecosystems to be context-aware, not only enabling interactive experiences but also supporting adaptive learning from data gathered across interconnected devices. 
+### Reflection ###
+I learned that when an integration problem occurs, I should never be too sure that the problem is on the other side. Instead, I should establish a good understanding of all the moving parts before concluding.
 
 # Week 7 #
 ## Week of 10/14/2024 Monday
@@ -65,8 +103,13 @@ I started sketching and modeling the electronic component in Fusion 360. I downl
 
 The form right now looks more like a gun than a wand, but form isn't the top priority now..hehe
 
+### Speculation ###
+In exploring digital ecosystems through Particle Photon and p5.js integration, I saw firsthand how engineering is evolving to include both tangible devices and digital interfaces that enable seamless communication. In this context, cultural expectations around engineering may shift toward viewing engineers as creators of systems that not only function well individually but also thrive in interconnected, responsive networks. For example, the Magic Spell system’s integration of Particle Photon, sensors, and cloud services illustrates how engineering is moving from standalone functionality to creating ecosystems of devices that "listen," "respond," and adapt in sync. 
 
+### Reflection ###
+AI has indeed transformed education by bridging gaps in understanding complex subjects, like working with the Terminal. Previously, I saw interacting with the Terminal as a daunting challenge—it felt like deciphering a foreign language, with cryptic messages and commands that seemed impossible to interpret without extensive experience. The Terminal operates in a syntax that’s precise yet unforgiving, making it difficult for newcomers to troubleshoot errors or understand messages intuitively.
 
+With AI, however, there's a shift in how we can approach learning the Terminal. AI-driven tools can act as interpreters, breaking down error messages, suggesting solutions, and even explaining the underlying processes in clear, accessible language. This makes the Terminal more accessible and less intimidating, helping users—especially beginners like myself—gain confidence as they navigate commands and solve problems.
 
 
 # Week 6 #
