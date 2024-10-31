@@ -18,7 +18,49 @@ Welcome to your new GitHub repository!
 
 [week 8](README.md#week-8)
 
+[week 9](README.md#week-9)
+
 [example](README.md#example-report-1)
+
+# Week 9 #
+## Week of 10/31/2024 Thursday
+
+### Experiment 1+2+3
+<img width="720" alt="experiments" src="assets/Files/Project3/Screenshot/experiment2024-10-31 13.01.50.png">
+
+The model hallucinated about my undergrad school. I have no idea why it think I graduated from Univeristy of Washington.
+
+<img width="720" alt="experiments" src="assets/Files/Project3/Screenshot/experiment2024-10-31 13.03.09.png">
+
+But it also knows the correct answer. Very curious about how it process seemingly conflicting information.
+
+<img width="720" alt="experiments" src="assets/Files/Project3/Screenshot/experiment2024-10-31 13.19.26.png">
+
+Although it knows about my master program, it did not mention Berkeley MDes unless  I specifically asked about it.
+
+
+<img width="720" alt="experiments" src="assets/Files/Project3/Screenshot/experiment2024-10-31 13.35.30.png">
+
+The model hallucinated again about my bachelor background, so I decided to take a closer look at the  chunk of the  content.
+
+
+### Experiment 4
+<img width="720" alt="experiments" src="assets/Files/Project3/Screenshot/experiment2024-10-31 14.31.06.png">
+
+I added two variables, location and time.
+
+
+
+<img width="720" alt="experiments" src="assets/Files/Project3/Screenshot/experiment2024-10-31 14.31.28.png">
+
+
+### Reflection
+In designing AI products, it's essential for designers to be actively involved in shaping user experiences, rather than leaving decisions solely to developers. AI design should shift towards a more collaborative, user-centered approach, similar to product or web design, rather than being confined to deep technical spaces. When developers alone make choices, products may end up neglecting the user’s needs, leading to features that feel impersonal and miss the mark on functionality. A collaborative process, where designers and developers co-create, can better balance innovation with usability. In tools like workbenches for building AI agents, designers can bridge the gap between complex backend knowledge systems and the end-user experience, ensuring that AI solutions are truly accessible, engaging, and relevant for users.
+
+### Speculation
+
+
+
 
 # Week 8 #
 ## Week of 10/24/2024 Thursday
