@@ -58,8 +58,7 @@ I added two variables, location and time.
 In designing AI products, it's essential for designers to be actively involved in shaping user experiences, rather than leaving decisions solely to developers. AI design should shift towards a more collaborative, user-centered approach, similar to product or web design, rather than being confined to deep technical spaces. When developers alone make choices, products may end up neglecting the user’s needs, leading to features that feel impersonal and miss the mark on functionality. A collaborative process, where designers and developers co-create, can better balance innovation with usability. In tools like workbenches for building AI agents, designers can bridge the gap between complex backend knowledge systems and the end-user experience, ensuring that AI solutions are truly accessible, engaging, and relevant for users.
 
 ### Speculation
-v
-
+Designing for LLM might become the next big challenge for designers. However, unlike design materials in the past, LLM models are like a black box. How can designers define "how it should be" when the subject matter is unpredictable? In the future, I speculate that there will be more tools to unfold the LLM to make them more transparent.
 
 
 
