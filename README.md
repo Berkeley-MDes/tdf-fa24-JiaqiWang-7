@@ -39,7 +39,9 @@ An interesting metaphor came to my mind when thinking about these two opposing m
 
 The technology-centered workflow is similar to starting a jigsaw puzzle with a particular jigsaw piece. You analyze the shape and color of that piece, and then reason about what kind of gap would best fit such a piece.
 ![starting piece](image-13.png)
+
 The human-centered workflow is like starting to analyze an unfinished jigsaw landscape. You identify the shape of the void and then go on a search for the piece that matches the shape of the void. However, there is a possibility that such a piece doesn't exist in the current world.
+
 ![missing piece](image-12.png)
 
 ### Speculation
