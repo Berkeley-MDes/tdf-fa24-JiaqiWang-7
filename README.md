@@ -20,7 +20,61 @@ Welcome to your new GitHub repository!
 
 [week 9](README.md#week-9)
 
+[week 10](README.md#week-10)
+
+[week 11](README.md#week-11)
+
 [example](README.md#example-report-1)
+
+# Week 11 #
+## Week of 11/14/2024 Thursday
+During Framework on Wednesday, Professor Jodi Forlizz from Carnegie Mellon University gave a lecture on how designers can utilize AI as a material to design products that are feasible, viable, and desirable. 
+
+She proposed an alternative workflow/mindset to human-centered design, which is start by thinking about what data is available or what the technology can offer, and then map that to the use cases that best fit the technology. 
+
+<img width="540" alt="experiments" src="assets\Files\documentation\jodi.jpg">
+
+### Reflection
+An interesting metaphor came to my mind when thinking about these two opposing mindsets: Completing a jigsaw puzzle.
+
+The technology-centered workflow is similar to starting a jigsaw puzzle with a particular jigsaw piece. You analyze the shape and color of that piece, and then reason about what kind of gap would best fit such a piece.
+![starting piece](image-13.png)
+The human-centered workflow is like starting to analyze an unfinished jigsaw landscape. You identify the shape of the void and then go on a search for the piece that matches the shape of the void. However, there is a possibility that such a piece doesn't exist in the current world.
+![missing piece](image-12.png)
+
+### Speculation
+With LLM and AI being capable of performing repetitive or low-skill tasks much faster and reliably, engineers will be held to a higher standard. The cultural expectation of entry level engineering will be different from the one from the past, highlighting system thinking skills, integration capability, and fluidity to cross disciplinary boundaries.
+
+
+# Week 10 #
+## Week of 11/7/2024 Thursday
+This week, I used my weekly report as the knowledge base and redid experiments 1-4.
+
+<img width="540" alt="experiments" src="assets\Files\screenshot\experiment4.png">
+
+I explored how to best structure the data in the knowledge base to yield the best result. 
+
+
+My first iteration used week as the delimiter to separate my entire weekly report into smaller chunks. I did not do further editing beyond that.
+
+<img width="540" alt="weekBased" src="assets\Files\screenshot\weekBased.png">
+
+In my second iteration, I structured my knowledge base based on Projects. I will start each chunk with the project it is associated with.
+
+<img width="540" alt="projectBased" src="assets\Files\screenshot\projectbased.png">
+
+When I asked “What projects have you worked on this semester? “, I prefer the result from the second iteration because the result is more holistic, summarizing all three projects rather than being too narrowed down on one specific project. 
+
+<img width="720" alt="responses" src="assets\Files\Diagram\response.png">
+
+The experiment impacted the way to structure data of knowledge base for my final design. I manually delete all my speculation and reference of projects for inspiration so that the model would not be confused about other people’s work with my work. I also manually tagged each chunk of data with the project it is associated with since project information is not present in my weekly report. 
+
+### Reflection
+When adjusting parameters and switching different LLM models, I reflected on how these settings should reflect the use scenario of the Voice AI agent. 
+![alt text](image-10.png)
+
+### Speculation
+Just as the Industrial Revolution made human physical labor less central to many processes (thanks to machinery, automation, and mechanization), the rise of Large Language Models (LLMs) and other AI-driven technologies is shifting the role of human cognition and problem-solving in significant ways. We need to think critically about what type of skills make humans unique and focus on developing those complementary skills.
 
 # Week 9 #
 ## Week of 10/31/2024 Thursday
@@ -63,6 +117,7 @@ Designing for LLM might become the next big challenge for designers. However, un
 
 
 
+
 # Week 8 #
 ## Week of 10/24/2024 Thursday
 ### Deployment of Edge impulse library
@@ -83,9 +138,15 @@ I decided to perform an incremental test to understand the functions provided by
     2. Storing 4 sets of feature lists and randomly sample them all together to minimize effects of unmatching time frame
     3. Randomly sampling from 4 sets of feature list
 7. See accuracy of unoptimized vs quantized methods.
+
+
 #### Experiment 2 Impacts:
+
+<img width="720" alt="training process" src="assets\Files\Diagram\processTraining.png">
+
 Alignment of Sampling and Training Frequencies (delay time)
 From experimenting with Model 1, I realized that the training frequency I used was too low, risking missing important details in the data, leading to a loss of critical information that can impact model performance, especially in applications where real-time or high-frequency events occur. On the other hand, during deployment, for accurate learning, the training frequency needs to be consistent with the data's sampling frequency. If the model isn't trained on data that matches the rate at which it’s collected, it may not learn patterns that happen over shorter or longer intervals. With aligned sampling and training frequencies, I achieved the 100% accuracy rate in Model 2.
+![model 2](image-11.png)
 
 ### Establishing connection with cloud + p5.js
 Initially, I used particle events  to publish a recognized spell as a string with the spell’s name, but it was causing trouble for p5.js side to fetch the data because it’s not constantly available. After talking to Jeff, I realized that using Particle Variables is a great choice for connecting with p5.js when I need consistent access to specific data without requiring real-time push updates. 
@@ -104,6 +165,7 @@ For the other photon2, it’s better to use Particle Events, which is ideal when
 
 ### Speculation ###
 Given my project’s use of ML models to distinguish motion patterns, AI could take on a critical role as the “intelligence layer” in Digital Ecosystems. AI’s role could expand to act as a central processor that interprets incoming data from multiple devices, managing responses in real time and adapting to patterns learned from user behavior. In applications similar to the Magic Spell project, AI could recognize complex gesture patterns, adjust digital outputs in real-time, and personalize responses based on previous interactions. This would allow Digital Ecosystems to be context-aware, not only enabling interactive experiences but also supporting adaptive learning from data gathered across interconnected devices. 
+
 ### Reflection ###
 I learned that when an integration problem occurs, I should never be too sure that the problem is on the other side. Instead, I should establish a good understanding of all the moving parts before concluding.
 
