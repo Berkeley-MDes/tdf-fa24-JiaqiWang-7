@@ -24,7 +24,14 @@ Welcome to your new GitHub repository!
 
 [week 11](README.md#week-11)
 
+[week 12](README.md#week-12)
+
+
 [example](README.md#example-report-1)
+
+# Week 12 #
+## Week of 11/21/2024 Thursday
+
 
 # Week 11 #
 ## Week of 11/14/2024 Thursday
