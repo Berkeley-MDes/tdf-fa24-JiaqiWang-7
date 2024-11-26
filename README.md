@@ -31,6 +31,13 @@ Welcome to your new GitHub repository!
 
 # Week 12 #
 ## Week of 11/21/2024 Thursday
+This week, my team's proposal for Project 4 changed drastically. Originally, we were thinking about expanding on the magic wand idea but instilling more meaning into the interaction. Inspired by the scene of fighting boggart in the Harry Potter film, we thought of using stable diffusion to generate images of people's fear and invite them to think of how they could turn their fear into a ridiculous form by casting the ridiculous spell, which perhaps can help them take on a humorous perspective when dealing with fear. We then explored the feasibility of replicating what we imagined using chatGPT and stable diffusion, but the result was not satisfactory. 
+
+In the meantime, we also interviewed a neuropsychology professor who teaches the neuropsychology of happiness. We asked about how professional psychiatrists treat phobia clinically, which led us to this concept of exposure therapy. In this form of therapy, psychologists create a safe environment in which to “expose” individuals to the things they fear and avoid, usually starting with the most acceptable form such as a static image, and then gradually moving up the ladder of fear if they can remain calm. We thought about combining exposure therapy's approach of exposing fear gradually and the interaction of casting a ridiculous spell to reimagine fear on each level, but that just made the technical aspect even more complicated.
+
+In the end, I felt overwhelmed by the limited time, technical ambiguity, and my recently declined energy level. I wanted to create something for mindfulness practices. Recently my mental health has been a bit under the weather, so I tried out a bunch of mindfulness practices for combating anxiety. One of the practices is called the tree grounding technique, which is a mindfulness exercise that heavily relies on imagination, involving oneself picturing his/her body as a tree growthing as they breath and stretch. At the same time, I also recently learned about Aphantasia, which is a characteristic some people have related to how their minds and imagination work. Having it means you don’t have visual imagination, keeping you from picturing things in your mind. When reading through guided instruction scripts, I found many opportunities to transform this exercise from a passive reaction to script to an interactive visualization.
+
+### Reflection
 
 
 # Week 11 #
