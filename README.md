@@ -26,8 +26,78 @@ Welcome to your new GitHub repository!
 
 [week 12](README.md#week-12)
 
+[week 14](README.md#week-13)
+
 
 [example](README.md#example-report-1)
+
+# Week 14 #
+## Week of 11/30/2024 
+Last week, I focused on creating the tree visual with Touchdesigner. It is my first time diving deeper into touchdesigner.
+Below are the experiments I did to get closer to my goals within Touchdesigner:
+
+1. Touch designer basic navigation:
+- basic understanding of the difference between COMP, TOP, CHOP, DAT, MAT
+- Controlling parameter with dynamic data 
+
+2. L-system experiments
+- understanding recursive patterns and how to use rules and parameters to manipulate the shape of the tree:
+- Reviewed turtle programming 
+<img width="540" alt="diagram Code" src="assets/Files/screenshot/Project4/addingLeaves.png">
+
+3. Visual exploration:
+- How to present geometry with particle effect: replacing vertexes with spheres, matching
+- Adding blur and glow effects
+<img width="540" alt="diagram Code" src="assets/Files/screenshot/Project4/ParticleSystem.png">
+
+4. Connecting serial port data with touchdesigner:
+- select the first message using select DAT
+- Turn string message into channel number using DAT to CHOP
+<img width="540" alt="diagram Code" src="assets/Files/screenshot/Project4/controlGenerationWithSerialData.png">
+
+5. Using serial data to control L-system generation
+- the parameter control requires a float or a string, simply pointing to the CHOP node is not sufficient because a CHOP node is the constrainer of different channels, within channels data flow.
+
+I also spent a lot of time figuring out the process diagram, or flow of the data. Below are my process documentation:
+
+### Process documentation:
+
+Where is the best place to carry out the calculation? On the sender end or on the receiving end?
+
+**Is using variables the best way to interface?**
+
+1. potential problems:
+    1. higher latency, because it’s, relies on webhook
+    2. Mixing interupt logic with loop logic
+
+**What are some possible ways to achieve the same effect:**
+
+1. state machines:
+    1. states
+    2. events
+2. event interruption based
+3. query-based
+
+## Week of 12/02/2024 Monday
+
+1. Test publish + subscribe flow
+2. Added the cycle detection code, publish “Cycle” event when a cycle is completed
+<img width="540" alt="diagram Code" src="assets/Files/screenshot/Project4/subscribe.png">
+3. Tested out the proximity sensor individually. Determined what’s a good threshold to determine if the user is away or present
+<img width="540" alt="diagram Code" src="assets/Files/Project3/Screenshot/IMG_0159.JPG">
+
+4. Publish the “userClose” event when user is within a certain range
+5. Combine cycle detection code with proximity detection code, publish them as separate events
+    1. This did not work, we decided to use another photon to handle distance sensing
+    2. Could it be caused by using SPI and I2C at the same time?
+6. Combine cycle detection code with heart rate bpm code, publish them as separate events
+7. On the subscriber end, work out the logic to continuously count cycles when user is close and reset the count to 0 when user is away.
+8. Connect to touch designer
+<img width="540" alt="diagram Code" src="assets/Files/screenshot/Project4/step8.png">
+
+## Week of 12/05/2024 Thursday
+
+
 
 # Week 12 #
 ## Week of 11/21/2024 Thursday
@@ -35,10 +105,29 @@ This week, my team's proposal for Project 4 changed drastically. Originally, we 
 
 In the meantime, we also interviewed a neuropsychology professor who teaches the neuropsychology of happiness. We asked about how professional psychiatrists treat phobia clinically, which led us to this concept of exposure therapy. In this form of therapy, psychologists create a safe environment in which to “expose” individuals to the things they fear and avoid, usually starting with the most acceptable form such as a static image, and then gradually moving up the ladder of fear if they can remain calm. We thought about combining exposure therapy's approach of exposing fear gradually and the interaction of casting a ridiculous spell to reimagine fear on each level, but that just made the technical aspect even more complicated.
 
-In the end, I felt overwhelmed by the limited time, technical ambiguity, and my recently declined energy level. I wanted to create something for mindfulness practices. Recently my mental health has been a bit under the weather, so I tried out a bunch of mindfulness practices for combating anxiety. One of the practices is called the tree grounding technique, which is a mindfulness exercise that heavily relies on imagination, involving oneself picturing his/her body as a tree growthing as they breath and stretch. At the same time, I also recently learned about Aphantasia, which is a characteristic some people have related to how their minds and imagination work. Having it means you don’t have visual imagination, keeping you from picturing things in your mind. When reading through guided instruction scripts, I found many opportunities to transform this exercise from a passive reaction to script to an interactive visualization.
+In the end, I felt overwhelmed by the limited time, technical ambiguity, and my recently declined energy level. I wanted to create something for mindfulness practices. Recently my mental health has been a bit under the weather, so I tried out a bunch of mindfulness practices for combating anxiety. One of the practices is called the [tree grounding technique](!https://treecreate.org/2021/05/06/tree-grounding-meditation/), which is a mindfulness exercise that heavily relies on imagination, involving oneself picturing his/her body as a tree growthing as they breath and stretch. At the same time, I also recently learned about Aphantasia, which is a characteristic some people have related to how their minds and imagination work. Having it means you don’t have visual imagination, keeping you from picturing things in your mind. When reading through guided instruction scripts, I found many opportunities to transform this exercise from a passive reaction to script to an interactive visualization.
+
+My current mental model of how the system could work:
+<img width="540" alt="diagram Code" src="assets/Files/Diagram/diagramCode 2024年11月30日.jpeg">
+
+<img width="540" alt="diagram Code" src="assets/Files/Diagram/diagramCode 2025.jpeg">
 
 ### Reflection
+I often feel tension and pressure when thinking about mastering new skills, especially in areas where others seem to excel effortlessly. My tendency has been to fixate on the end result, imagining that the key to success lies in reaching a level of expertise as quickly as possible. But recently, I've come to realize that the real value lies in the process, not the destination.
 
+It’s the workflow and the methods I use to understand new technology that matter the most. What truly defines mastery is not how fast I can reach a result, but how thoughtfully I approach each step of the journey. Instead of becoming obsessed with achieving perfection, I should embrace the learning process itself, focusing on refining the steps I take to get there.
+
+I’ve also recognized that 80% of my time should be spent planning—making reasonable assumptions, breaking down complex problems into manageable, incremental steps. The process of making well-thought-out decisions based on the best judgment I have at the moment will allow me to move forward, even when I don’t have all the answers. It’s about staying flexible and learning through experimentation.
+
+When I see peers who are so much further ahead in certain areas, I’m learning to shift my mindset. Rather than feeling discouraged by my lack of expertise, I’m learning to view their skills as opportunities for growth. Instead of comparing myself to them, I can focus on what I can learn from their approach, their discipline, and their journey.
+
+The process itself is where the magic lies. Mastery is a continuous evolution, and the key is to enjoy the journey, not just to chase the final result.
+
+### Speculation
+
+Voice AI challenges traditional UX principles like "don't make me think" and "recognize rather than recall." In a conversational interface, users often face a blank screen and may not know exactly what they want or how to express it. Unlike visual interfaces with clear options, voice AI must guide users through uncertainty. It should anticipate needs and offer prompts or clarifying questions to help users articulate their goals.
+
+Instead of waiting for a perfect request, the AI can present suggestions or ask follow-up questions to direct the conversation. This approach reduces cognitive load, making the interaction feel intuitive. Ultimately, conversational AI should adapt to the user's uncertainty and guide them smoothly to the desired outcome.
 
 # Week 11 #
 ## Week of 11/14/2024 Thursday
